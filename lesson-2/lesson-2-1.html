@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        
+        let a = 1, b = 1, c, d; 
+        
+        c = ++a;
+        // Префиксная форма возвращает новое значение, c=a+1=1+1=2, a=>2
+        alert(c); 
+        
+        d = b++;
+        // Постфиксная форма инкремента возвращает старое значение, d=b=1, b=>2
+        alert(d); 
+        
+        c = 2 + ++a;
+        // Префиксная форма возвращает старое значение, с=2+2+1=5, a=>3
+        alert(c); 
+        
+        d = 2 + b++;
+        // Постфиксная форма возвращает старое значение, d=2+2=4, b=>3
+        alert(d);
+        
+        // Возвращаются значения после применения инкремента
+        alert(a);
+        alert(b);
+    </script>
+</body>
+</html>
